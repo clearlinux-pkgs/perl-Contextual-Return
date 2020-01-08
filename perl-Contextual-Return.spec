@@ -4,12 +4,13 @@
 #
 Name     : perl-Contextual-Return
 Version  : 0.004014
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz
 Summary  : 'Create context-sensitive return values'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-Contextual-Return-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Want)
 
@@ -29,8 +30,18 @@ Requires: perl-Contextual-Return = %{version}-%{release}
 dev components for the perl-Contextual-Return package.
 
 
+%package perl
+Summary: perl components for the perl-Contextual-Return package.
+Group: Default
+Requires: perl-Contextual-Return = %{version}-%{release}
+
+%description perl
+perl components for the perl-Contextual-Return package.
+
+
 %prep
 %setup -q -n Contextual-Return-0.004014
+cd %{_builddir}/Contextual-Return-0.004014
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -66,10 +77,13 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/Contextual/Return.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Contextual/Return/Failure.pm
 
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/Contextual::Return.3
 /usr/share/man/man3/Contextual::Return::Failure.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/Contextual/Return.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Contextual/Return/Failure.pm
