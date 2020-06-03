@@ -4,7 +4,7 @@
 #
 Name     : perl-Contextual-Return
 Version  : 0.004014
-Release  : 3
+Release  : 4
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz
 Summary  : 'Create context-sensitive return values'
@@ -85,5 +85,5 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Contextual/Return.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Contextual/Return/Failure.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Contextual/Return.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Contextual/Return/Failure.pm
