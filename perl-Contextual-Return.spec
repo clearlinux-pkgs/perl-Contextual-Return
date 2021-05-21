@@ -85,5 +85,5 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/Contextual/Return.pm
-/usr/lib/perl5/vendor_perl/5.32.1/Contextual/Return/Failure.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Contextual/Return.pm
+/usr/lib/perl5/vendor_perl/5.34.0/Contextual/Return/Failure.pm
