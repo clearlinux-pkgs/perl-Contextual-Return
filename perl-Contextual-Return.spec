@@ -7,7 +7,7 @@
 #
 Name     : perl-Contextual-Return
 Version  : 0.004014
-Release  : 21
+Release  : 22
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz
 Summary  : 'Create context-sensitive return values'
